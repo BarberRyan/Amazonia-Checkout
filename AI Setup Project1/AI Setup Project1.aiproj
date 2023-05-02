@@ -18,9 +18,17 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'DefaultBuild' " />
   <ItemGroup>
-    <Compile Include="AI Setup Project1.aip">
+    <Compile Include="AC_Installer_Windows_x86.aip">
       <SubType>Code</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Amazonia Checkout\Amazonia Checkout.csproj">
+      <Name>Amazonia Checkout</Name>
+      <Project>{279d2fe9-f79b-4a1e-b368-97289032502a}</Project>
+      <Private>True</Private>
+      <OutputsToImport>PrimaryOutput;References;ContentOutput</OutputsToImport>
+    </ProjectReference>
   </ItemGroup>
   <Target Name="Build">
     <Error Text="This project requires Advanced Installer tool. Please download it from https://www.advancedinstaller.com/download.html" />
