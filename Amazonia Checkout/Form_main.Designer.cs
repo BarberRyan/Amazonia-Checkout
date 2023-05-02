@@ -234,6 +234,7 @@
             this.Controls.Add(this.settings);
             this.Controls.Add(this.logo);
             this.Controls.Add(this.cartPanel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Amazonia Checkout";
